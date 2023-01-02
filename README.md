@@ -1,1 +1,0 @@
-# danieltripp.github.io
