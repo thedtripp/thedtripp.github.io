@@ -112,7 +112,7 @@ button {
   color: var(--clr-primary);
 }
 
-.link::before {
+/* .link::before {
   content: "";
   display: inline;
   width: 0%;
@@ -126,7 +126,7 @@ button {
 .link:hover::before,
 .link:focus::before {
   width: 100%;
-}
+} */
 
 .link--nav {
   color: var(--clr-fg);
