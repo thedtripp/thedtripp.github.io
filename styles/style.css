@@ -433,3 +433,17 @@ main {
   }
 } 
 
+@media (max-width: 400px) {
+  .contact {
+    display: flex;
+    align-items:center;
+  }
+
+  .contact .link--icon {
+    margin-right: 0.8em;
+  }
+  
+  .contact .btn--outline {
+    margin-right: 1em;
+  }
+}
