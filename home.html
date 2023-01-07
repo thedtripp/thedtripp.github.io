@@ -69,8 +69,24 @@
 
       <!-- About -->
       <div class="about center">
-        <h1>Hi, I am <span class="about__name">Daniel Tripp.</span></h1>
-        <h2 class="about__role">Software Engineer.</h2>
+
+        <h1>Hi, I'm <span class="about__name">Daniel Tripp</span></h1>
+        <h2><span class="type"></span></h2>
+
+        <script src="typed.js"></script>
+        <script>
+          var typed = new Typed('.type', {
+            strings: [
+              'Software Engineer',
+              'Climber', 
+              'Dog Dad',
+              'Software Engineer'
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: false
+          });
+        </script>
 
         <p class="about__desc">
           Hello and welcome to my website! My name is Daniel and I am a driven and enthusiastic software engineer with experience interning at industry leaders like Google and Quantcast.
