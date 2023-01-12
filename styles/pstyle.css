@@ -8,15 +8,6 @@
 .pknmcard {
   height: 400px;
   width: 320px;
-  /* @media screen and (min-width: 600px) {
-      // width: 61vh;
-      // height: 85vh;
-      // max-width: 500px;
-      // max-height: 700px;
-      height: clamp(22vw, 105vh, 30.2vw);
-      width: clamp(22vw, 105vh, 30.2vw);
-    } */
-
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -40,6 +31,13 @@
 
   transform-origin: center;
 
+}
+
+@media screen and (max-width: 768px) {
+  .pknmcard {
+    height: 300px;
+    width: 240px;
+  }
 }
 
 .pknmcard:hover {
@@ -289,7 +287,6 @@ a:hover.no-decoration {
 
 .project-img-container {
   background-color: rgb(148, 156, 255);
-  background-color: green;
   height: 54%;
   width: 100%
 }
@@ -298,14 +295,6 @@ a:hover.no-decoration {
   background-color: rgb(148, 156, 255);
   height: 46%;
   width: 100%
-}
-
-.txt-title-container {
-  height: 37.5%;
-}
-
-.txt-desc-container {
-  height: 62.5%;
 }
 
 .centered-title {
@@ -335,4 +324,15 @@ h3.centered-title {
 
 .project-img {
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .pknmcard {
+    height: 300px;
+    width: 240px;
+  }
+
+  p.centered-desc {
+    padding: 0px 5px;
+  }
 }
