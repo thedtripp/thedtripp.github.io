@@ -15,3 +15,5 @@ Sort out animation delay (css)
 Enlarge github and linkedin icons on homepage
 
 Clean up/refactor code
+
+Fix blinking typing cursor over menu on small screens
