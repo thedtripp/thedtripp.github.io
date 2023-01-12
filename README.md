@@ -13,3 +13,5 @@ Include more info/pages on professional experience
 Sort out animation delay (css)
 
 Enlarge github and linkedin icons on homepage
+
+Clean up/refactor code
