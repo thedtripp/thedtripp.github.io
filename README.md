@@ -4,10 +4,12 @@ My personal website
 
 ### Future work:
 
-Redirect DDTRIPP.com here (CNAME)
+~~Redirect DDTRIPP.com here (CNAME)~~
 
 Track web traffic
 
 Include more info/pages on professional experience
 
 Sort out animation delay (css)
+
+Enlarge github and linkedin icons on homepage
