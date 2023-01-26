@@ -5,7 +5,7 @@
   --shine-effect2: #ddccaa;
 }
 
-.pknmcard {
+.projectcard {
   height: 400px;
   width: 320px;
   position: relative;
@@ -34,13 +34,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .pknmcard {
+  .projectcard {
     height: 300px;
     width: 240px;
   }
 }
 
-.pknmcard:hover {
+.projectcard:hover {
   box-shadow:
     -20px -20px 30px -25px var(--color1),
     20px 20px 30px -25px var(--color2),
@@ -50,13 +50,13 @@
     0 55px 35px -20px rgba(0, 0, 0, 0.5);
 }
 
-.pknmcard.shine-effect {
+.projectcard.shine-effect {
   --color1: var(--shine-effect1);
   --color2: var(--shine-effect2);
 }
 
-.pknmcard:before,
-.pknmcard:after {
+.projectcard:before,
+.projectcard:after {
   content: "";
   position: absolute;
   left: 0;
@@ -69,7 +69,7 @@
   transition: all .33s ease;
 }
 
-.pknmcard:before {
+.projectcard:before {
   background-position: 50% 50%;
   background-size: 300% 300%;
   background-image: linear-gradient(115deg,
@@ -84,7 +84,7 @@
   z-index: 1;
 }
 
-.pknmcard:after {
+.projectcard:after {
   opacity: 1;
   background-image:
     url("../img/sparkles.gif"),
@@ -100,21 +100,21 @@
   opacity: .75;
 }
 
-.pknmcard.active:after,
-.pknmcard:hover:after {
+.projectcard.active:after,
+.projectcard:hover:after {
   filter: brightness(1) contrast(1);
   ;
   opacity: 1;
 }
 
-.pknmcard.active,
-.pknmcard:hover {
+.projectcard.active,
+.projectcard:hover {
   animation: none;
   transition: box-shadow 0.1s ease-out;
 }
 
-.pknmcard.active:before,
-.pknmcard:hover:before {
+.projectcard.active:before,
+.projectcard:hover:before {
   animation: none;
   background-image: linear-gradient(110deg,
       transparent 25%,
@@ -128,26 +128,26 @@
   transition: none;
 }
 
-.pknmcard.active:before,
-.pknmcard:hover:before,
-.pknmcard.active:after,
-.pknmcard:hover:after {
+.projectcard.active:before,
+.projectcard:hover:before,
+.projectcard.active:after,
+.projectcard:hover:after {
   animation: none;
   transition: none;
 }
 
-.pknmcard.animated {
+.projectcard.animated {
   transition: none;
   animation: holoCard 12s ease 0s 1;
 }
 
-.pknmcard.animated::before {
+.projectcard.animated::before {
   transition: none;
   animation: holoGradient 12s ease 0s 1;
 }
 
 
-.pknmcard.animated::after {
+.projectcard.animated::after {
   transition: none;
   animation: holoSparkle 12s ease 0s 1;
 }
@@ -328,7 +328,7 @@ h3.centered-title {
 }
 
 @media screen and (max-width: 768px) {
-  .pknmcard {
+  .projectcard {
     height: 300px;
     width: 240px;
   }
