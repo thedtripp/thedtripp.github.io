@@ -1,8 +1,8 @@
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(149, 0, 255);
-  --charizard1: rgb(137, 155, 244);
-  --charizard2: #ddccaa;
+  --shine-effect1: rgb(137, 155, 244);
+  --shine-effect2: #ddccaa;
 }
 
 .pknmcard {
@@ -50,9 +50,9 @@
     0 55px 35px -20px rgba(0, 0, 0, 0.5);
 }
 
-.pknmcard.charizard {
-  --color1: var(--charizard1);
-  --color2: var(--charizard2);
+.pknmcard.shine-effect {
+  --color1: var(--shine-effect1);
+  --color2: var(--shine-effect2);
 }
 
 .pknmcard:before,
