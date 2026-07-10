@@ -86,10 +86,6 @@
 
 .projectcard:after {
   opacity: 1;
-  background-image:
-    url("../img/sparkles.gif"),
-    url(../img/holo.webp),
-    linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
   background-position: 50% 50%;
   background-size: 160%;
   background-blend-mode: overlay;
@@ -98,6 +94,20 @@
   transition: all .33s ease;
   mix-blend-mode: color-dodge;
   opacity: .75;
+}
+
+/* sparkles.gif is a ~2MB 36-frame animated GIF -- only decode/loop it
+   while the hover effect is actually showing (hover/active/the brief
+   post-hover "animated" settle), not for the entire time the page is
+   open on all 6 cards at once (was the page's main memory-growth cause,
+   2026-07-10). */
+.projectcard.active:after,
+.projectcard:hover:after,
+.projectcard.animated:after {
+  background-image:
+    url("../img/sparkles.gif"),
+    url(../img/holo.webp),
+    linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
 }
 
 .projectcard.active:after,
