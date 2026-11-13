@@ -188,6 +188,18 @@
     }
 }
 
+@media(max-width: 768px) {
+
+    h3.centered-title {
+        font-size: 1.1rem;
+    }
+
+    p.centered-desc {
+        font-size: 0.8rem;
+        line-height: 1.35;
+    }
+}
+
 @media(max-width: 600px) {
 
     .topbar .nav__list .link--nav {
