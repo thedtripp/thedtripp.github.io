@@ -2,27 +2,58 @@
 <html lang="en">
 
 <head>
-  <!--TODO REMOVE AUTOREFRESH-->
-  <!-- <meta http-equiv="refresh" content="3"> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Software engineer building distributed systems and cloud infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="./scripts/jquery3.4.1.min.js"></script>
+  <link rel="stylesheet" href="styles/pstyle.css">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/index-style.css?v=2" />
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/index-style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <title>DD Tripp</title>
 </head>
 
-<body>
-  <section class="showcase">
-    <header>
-      <h2 class="logo">DD TRIPP</h2>
-      <div class="toggle"></div>
-    </header>
+<body class="light" id="top">
 
+  <header class="header topbar center">
+    <h3>
+      <a href="#top" class="link">DDTRIPP</a>
+    </h3>
+
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="./blog">Blog</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="showcase">
     <video src="./img/background-video.mp4" muted loop autoplay playsinline></video>
 
     <div class="overlay"></div>
@@ -31,38 +62,204 @@
       <h2 class="rage">Building</h2>
       <h3>Distributed Systems</h3>
       <p>I'm a software engineer specializing in distributed systems and cloud infrastructure. I build Kubernetes operators, backend services, and database automation that eliminate operational toil, improve reliability, and scale production infrastructure.</p>
-      <a href="./home.html">View Portfolio</a>
+      <a href="#projects">View Projects</a>
     </div>
 
     <ul class="social">
-      <li><a href="https://www.github.com/thedtripp" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/ddtripp/" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
-      <li><a href="mailto:daniel.tripp100@gmail.com"><i class="fa fa-envelope fa-3x"></i></a></li>
+      <li><a href="https://www.github.com/thedtripp" target="_blank" aria-label="github"><i class="fab fa-github fa-3x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/ddtripp/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin fa-3x"></i></a></li>
+      <li><a href="mailto:daniel.tripp100@gmail.com" aria-label="email"><i class="fas fa-envelope fa-3x"></i></a></li>
     </ul>
   </section>
 
-  <div class="menu">
-    <ul>
-      <li><a href="./home.html">Home</a></li>
-      <li><a href="./home.html#projects">Projects</a></li>
-      <li><a href="./blog">Blog</a></li>
-      <!--
-      <li><a href="./img/resume.pdf" target="_blank">Resume</a></li>
-      -->
-      <!-- <li><a href="https://ddtripp.com/bruce" target="_blank">Bruce</a></li> -->
-      <li><a href="https://ddtripp.com/nothing" target="_blank">Nothing</a></li>
-      <li><a href="./home.html#contact">Contact</a></li>
-    </ul>
+  <main>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="row">
+
+        <a class="no-decoration" href="https://github.com/thedtripp/technical_analysis/blob/main/README.md"
+          target="_blank">
+          <div class="projectcard shine-effect">
+            <div class="project-img-container">
+              <img class="project-img" src="./img/stockmarket.jpeg" alt="">
+            </div>
+            <div class="project-txt-container">
+              <h3 class="centered-title">Technical Analysis Dashboard</h3>
+              <p class="centered-desc">
+                Streamlit dashboard for S&P 500 stock analysis with technical indicators and candlestick charts </p>
+            </div>
+          </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/Database-Design-Term-Project/blob/main/README.md"
+          target="_blank">
+          <div class="projectcard shine-effect">
+            <div class="project-img-container">
+              <img class="project-img" src="./img/airplanes.jpeg" alt="">
+            </div>
+            <div class="project-txt-container">
+              <h3 class="centered-title">Air Travel DB</h3>
+              <p class="centered-desc">
+                Relational database design modeling airline operations and business constraints
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/data-structures/blob/main/README.md"
+          target="_blank">
+          <div class="projectcard shine-effect">
+            <div class="project-img-container">
+              <img class="project-img" src="./img/datastructures.png" alt="">
+            </div>
+            <div class="project-txt-container">
+              <h3 class="centered-title">Data Structures</h3>
+              <p class="centered-desc">
+                Implementations of core data structures demonstrating algorithmic and systems fundamentals
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/whoami/blob/main/README.md" target="_blank">
+          <div class="projectcard shine-effect">
+            <div class="project-img-container">
+              <img class="project-img" src="./img/aiface.jpeg" alt="">
+            </div>
+            <div class="project-txt-container">
+              <h3 class="centered-title">Celeb Face Match</h3>
+              <p class="centered-desc">
+                Real-time face recognition system for matching faces to celebrity image dataset
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/battleship/blob/master/README.md" target="_blank">
+          <div class="projectcard shine-effect">
+            <div class="project-img-container">
+              <img class="project-img" src="./img/battleship.jpeg" alt="">
+            </div>
+            <div class="project-txt-container">
+              <h3 class="centered-title">Battleship</h3>
+              <p class="centered-desc">
+                Java console implementation of the Battleship game with turn-based logic
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a class="no-decoration" href="https://github.com/thedtripp/n-queens/blob/main/README.md" target="_blank">
+          <div class="projectcard shine-effect">
+            <div class="project-img-container">
+              <img class="project-img" src="./img/chessqueen.webp" alt="">
+            </div>
+            <div class="project-txt-container">
+              <h3 class="centered-title">N-Queens</h3>
+              <p class="centered-desc">
+                Backtracking-based solution to the N-Queens problem using optimized search techniques
+              </p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+
+      <h2 class="section__title">Skills/Interests</h2>
+
+      <ul class="skills__list">
+
+        <!-- Systems / architecture (highest signal) -->
+        <li class="skills__list-item btn btn--plain">Distributed systems</li>
+        <li class="skills__list-item btn btn--plain">System design</li>
+        <li class="skills__list-item btn btn--plain">Kubernetes</li>
+        <li class="skills__list-item btn btn--plain">Microservices</li>
+
+        <!-- Cloud / infra -->
+        <li class="skills__list-item btn btn--plain">Docker / containerization</li>
+        <li class="skills__list-item btn btn--plain">AWS (EC2, S3, EKS, Lambda)</li>
+        <li class="skills__list-item btn btn--plain">CI/CD (GitHub Actions, pipelines)</li>
+        <li class="skills__list-item btn btn--plain">Linux / Unix systems</li>
+
+        <!-- Backend -->
+        <li class="skills__list-item btn btn--plain">Backend systems</li>
+        <li class="skills__list-item btn btn--plain">RESTful APIs</li>
+        <li class="skills__list-item btn btn--plain">Databases (SQL + NoSQL)</li>
+        <li class="skills__list-item btn btn--plain">Data pipelines</li>
+
+        <!-- Engineering depth -->
+        <li class="skills__list-item btn btn--plain">Concurrency & multithreading</li>
+        <li class="skills__list-item btn btn--plain">Algorithms & data structures</li>
+        <li class="skills__list-item btn btn--plain">Design patterns</li>
+        <li class="skills__list-item btn btn--plain">Software testing & debugging</li>
+
+        <!-- Languages (de-emphasized but present) -->
+        <li class="skills__list-item btn btn--plain">Python / Go / Java / C++ / JavaScript</li>
+
+      </ul>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <div class="center">
+        <a href="mailto:daniel.tripp100@gmail.com" aria-label="email" class="link link--icon">
+          <i aria-hidden="true" class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/thedtripp" aria-label="github" class="link link--icon" target="_blank">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ddtripp/" aria-label="linkedin" class="link link--icon" target="_blank">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="link footer__link">
+      Created by DDTripp with &#10084;
+    </a>
+  </footer>
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
   </div>
 
+  <script src="./scripts/darklightscript.js"></script>
+
+  <style class="hover"></style>
+
+  <script src="./scripts/projectcardscript.js"></script>
+
   <script>
-    const menuToggle = document.querySelector('.toggle')
-    const showcase = document.querySelector('.showcase')
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active')
-      showcase.classList.toggle('active')
-    })
+    const topbar = document.querySelector('.topbar')
+    const hero = document.querySelector('.showcase')
+    const updateTopbar = () =>
+      topbar.classList.toggle('scrolled', window.scrollY > hero.offsetHeight - topbar.offsetHeight)
+    document.addEventListener('scroll', updateTopbar)
+    updateTopbar()
+
+    document.querySelectorAll('.nav__list a').forEach((link) =>
+      link.addEventListener('click', () => {
+        if (document.querySelector('.nav__list').classList.contains('display-nav-list')) {
+          btnHamburger.click()
+        }
+      })
+    )
   </script>
+
 </body>
 
 </html>
