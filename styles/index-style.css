@@ -159,6 +159,10 @@
     scroll-margin-top: 6em;
 }
 
+.contact .link--icon:last-child {
+    margin-right: 0;
+}
+
 .projects .row {
     max-width: 760px;
 }
