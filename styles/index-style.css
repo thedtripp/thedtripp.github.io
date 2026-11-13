@@ -159,6 +159,16 @@
     scroll-margin-top: 6em;
 }
 
+.projects .row {
+    max-width: 760px;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media(max-width: 798px) {
 
     .showcase {
